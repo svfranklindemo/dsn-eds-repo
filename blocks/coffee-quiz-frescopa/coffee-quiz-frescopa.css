@@ -67,6 +67,12 @@ body.frescopa-theme .coffee-quiz-frescopa__card {
   font-family: inherit !important;
 }
 
+.coffee-quiz-frescopa__card picture {
+  width: 100%;
+  display: block;
+  pointer-events: none;
+}
+
 /* Fallback for non-frescopa pages */
 .coffee-quiz-frescopa__card {
   border-radius: 8px;
