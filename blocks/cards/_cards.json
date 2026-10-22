@@ -222,6 +222,102 @@
               true
             ]
           }
+        },
+        {
+          "component": "select",
+          "name": "mobiletitlesize",
+          "label": "Title size",
+          "valueType": "string",
+          "value": "",
+          "description": "Leave on Default to use the app's size for the item variant.",
+          "options": [
+            { "name": "Default", "value": "" },
+            { "name": "X-Small", "value": "labelSmall" },
+            { "name": "Small", "value": "labelMedium" },
+            { "name": "Medium", "value": "labelLarge" },
+            { "name": "Large", "value": "titleMedium" },
+            { "name": "X-Large", "value": "titleLarge" }
+          ],
+          "condition": {
+            "==": [
+              { "var": "mobilerenderaslist" },
+              true
+            ]
+          }
+        },
+        {
+          "component": "select",
+          "name": "mobiletitlefontweight",
+          "label": "Title font weight",
+          "valueType": "string",
+          "value": "regular",
+          "options": [
+            { "name": "Light", "value": "light" },
+            { "name": "Regular", "value": "regular" },
+            { "name": "Bold", "value": "bold" },
+            { "name": "Black", "value": "black" }
+          ],
+          "condition": {
+            "==": [
+              { "var": "mobilerenderaslist" },
+              true
+            ]
+          }
+        },
+        {
+          "component": "boolean",
+          "name": "mobilehidesubtitle",
+          "label": "Hide subtitle",
+          "value": "false",
+          "valueType": "boolean",
+          "description": "Hide the subtitle of each list item",
+          "condition": {
+            "==": [
+              { "var": "mobilerenderaslist" },
+              true
+            ]
+          }
+        },
+        {
+          "component": "select",
+          "name": "mobilesubtitlesize",
+          "label": "Subtitle size",
+          "valueType": "string",
+          "value": "",
+          "description": "Leave on Default to use the app's size for the item variant.",
+          "options": [
+            { "name": "Default", "value": "" },
+            { "name": "X-Small", "value": "labelSmall" },
+            { "name": "Small", "value": "labelMedium" },
+            { "name": "Medium", "value": "labelLarge" },
+            { "name": "Large", "value": "titleMedium" },
+            { "name": "X-Large", "value": "titleLarge" }
+          ],
+          "condition": {
+            "and": [
+              { "==": [ { "var": "mobilerenderaslist" }, true ] },
+              { "!=": [ { "var": "mobilehidesubtitle" }, true ] }
+            ]
+          }
+        },
+        {
+          "component": "select",
+          "name": "mobilesubtitlefontweight",
+          "label": "Subtitle font weight",
+          "valueType": "string",
+          "value": "light",
+          "options": [
+            { "name": "Light", "value": "light" },
+            { "name": "Regular", "value": "regular" },
+            { "name": "Bold", "value": "bold" },
+            { "name": "Black", "value": "black" }
+          ],
+          "condition": {
+            "and": [
+              { "==": [ { "var": "mobilerenderaslist" }, true ] },
+              { "!=": [ { "var": "mobilehidesubtitle" }, true ] }
+            ]
+          }
         }
       ]
     },
