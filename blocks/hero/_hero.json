@@ -235,33 +235,6 @@
           "name": "mobileSpecific"
         },
         {
-          "component": "text",
-          "name": "mobilebuttoneventtype",
-          "label": "Mobile Button Event Type",
-          "value": "",
-          "valueType": "string"
-        },
-        {
-          "component": "select",
-          "name": "mobilehorizontalalignment",
-          "label": "Horizontal Alignment",
-          "valueType": "string",
-          "options": [
-            {
-              "name": "Left",
-              "value": "left"
-            },
-            {
-              "name": "Center",
-              "value": "center"
-            },
-            {
-              "name": "Right",
-              "value": "right"
-            }
-          ]
-        },
-        {
           "component": "select",
           "name": "mobilecardstyle",
           "label": "Card Type",
@@ -290,6 +263,26 @@
             {
               "name": "Image partially overlayed",
               "value": "partial-overlay"
+            }
+          ]
+        },
+        {
+          "component": "select",
+          "name": "mobilehorizontalalignment",
+          "label": "Horizontal Alignment",
+          "valueType": "string",
+          "options": [
+            {
+              "name": "Left",
+              "value": "left"
+            },
+            {
+              "name": "Center",
+              "value": "center"
+            },
+            {
+              "name": "Right",
+              "value": "right"
             }
           ]
         },
