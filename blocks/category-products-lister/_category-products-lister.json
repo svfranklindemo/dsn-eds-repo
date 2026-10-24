@@ -165,18 +165,22 @@
         },
         {
           "component": "select",
-          "name": "mobileimagestyle",
-          "label": "Image Resize Mode",
+          "name": "mobilesort",
+          "label": "Sort by",
           "valueType": "string",
-          "value": "contain",
+          "value": "none",
           "options": [
             {
-              "name": "Contain",
-              "value": "contain"
+              "name": "Name (A-Z)",
+              "value": "alphabetical"
             },
             {
-              "name": "Cover",
-              "value": "cover"
+              "name": "Name (Z-A)",
+              "value": "alphabetical-reverse"
+            },
+            {
+              "name": "None",
+              "value": "none"
             }
           ]
         },
@@ -213,6 +217,23 @@
           "value": "",
           "valueType": "number",
           "description": "Number of items per row (1-12). Applies only when Layout is Vertical/Grid"
+        },
+        {
+          "component": "select",
+          "name": "mobileimagestyle",
+          "label": "Image Resize Mode",
+          "valueType": "string",
+          "value": "contain",
+          "options": [
+            {
+              "name": "Contain",
+              "value": "contain"
+            },
+            {
+              "name": "Cover",
+              "value": "cover"
+            }
+          ]
         },
         {
           "component": "text",
@@ -307,27 +328,6 @@
               true
             ]
           }
-        },
-        {
-          "component": "select",
-          "name": "mobilesort",
-          "label": "Sort by",
-          "valueType": "string",
-          "value": "none",
-          "options": [
-            {
-              "name": "Name (A-Z)",
-              "value": "alphabetical"
-            },
-            {
-              "name": "Name (Z-A)",
-              "value": "alphabetical-reverse"
-            },
-            {
-              "name": "None",
-              "value": "none"
-            }
-          ]
         },
         {
           "component": "text",
