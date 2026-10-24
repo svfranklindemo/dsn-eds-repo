@@ -196,6 +196,9 @@
           "component": "select",
           "name": "mobilebuttonvariant",
           "label": "Button Variant",
+          "condition": {
+            "==": [{ "var": "mobileshowbutton" }, true]
+          },
           "options": [
             {
               "name": "Primary",
@@ -219,13 +222,6 @@
             }
           ],
           "description": "Leave empty to follow the CTA Style."
-        },
-        {
-          "component": "text",
-          "name": "mobilebuttoneventtype",
-          "label": "Mobile Button Event Type",
-          "value": "",
-          "valueType": "string"
         },
         {
           "component": "text",
