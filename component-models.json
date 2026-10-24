@@ -10966,12 +10966,15 @@
         "label": "Render as List",
         "value": "false",
         "valueType": "boolean",
-        "description": "Render the cards in this block as a single list instead of individual cards"
+        "description": "Render cards as a single mobile list only when their redirection links resolve to valid app screens or products. Cards without valid screen links are skipped in screen lists. If no valid list can be built, individual cards are exported."
       },
       {
         "component": "select",
         "name": "mobilelayout",
         "label": "Layout",
+        "condition": {
+          "==": [{ "var": "mobilerenderaslist" }, true]
+        },
         "valueType": "string",
         "value": "horizontal",
         "options": [
@@ -10989,6 +10992,9 @@
         "component": "select",
         "name": "mobilesort",
         "label": "Sort by",
+        "condition": {
+          "==": [{ "var": "mobilerenderaslist" }, true]
+        },
         "valueType": "string",
         "value": "none",
         "options": [
@@ -11013,7 +11019,10 @@
         "label": "Custom Mobile Style",
         "value": "",
         "multi": true,
-        "description": "Custom styles for the cards list on mobile"
+        "description": "Custom styles for the cards list on mobile",
+        "condition": {
+          "==": [{ "var": "mobilerenderaslist" }, true]
+        }
       },
       {
         "component": "select",
