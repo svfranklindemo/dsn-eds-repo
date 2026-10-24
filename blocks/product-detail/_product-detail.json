@@ -173,7 +173,7 @@
           "label": "Product Image",
           "name": "mobileProductImageProperties",
           "valueType": "string",
-          "collapsible": false,
+          "collapsible": true,
           "fields": [
             {
               "component": "boolean",
@@ -289,7 +289,7 @@
           "label": "Product Title",
           "name": "mobileProductTitleProperties",
           "valueType": "string",
-          "collapsible": false,
+          "collapsible": true,
           "condition": {
             "==": [
               {
@@ -484,7 +484,7 @@
           "label": "Product Price",
           "name": "mobileProductPriceProperties",
           "valueType": "string",
-          "collapsible": false,
+          "collapsible": true,
           "condition": {
             "==": [
               {
@@ -544,7 +544,7 @@
           "label": "Add to Cart",
           "name": "mobileProductAddToCartProperties",
           "valueType": "string",
-          "collapsible": false,
+          "collapsible": true,
           "condition": {
             "==": [
               {
@@ -739,7 +739,7 @@
           "label": "Product Description",
           "name": "mobileProductDescriptionProperties",
           "valueType": "string",
-          "collapsible": false,
+          "collapsible": true,
           "condition": {
             "==": [
               {
