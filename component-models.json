@@ -11783,7 +11783,15 @@
         "name": "mobileappshowproductimage",
         "label": "Enable Product Image",
         "value": "true",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "condition": {
+          "==": [
+            {
+              "var": "mobileappcustomproductdetails"
+            },
+            true
+          ]
+        }
       },
       {
         "component": "boolean",
@@ -11792,11 +11800,23 @@
         "value": "true",
         "valueType": "boolean",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductimage"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductimage"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11845,11 +11865,23 @@
         "multi": true,
         "description": "One style per row, as key:value (e.g. marginTop:8, padding:8)",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductimage"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductimage"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11858,7 +11890,15 @@
         "name": "mobileappshowproducttitle",
         "label": "Enable Product Title",
         "value": "true",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "condition": {
+          "==": [
+            {
+              "var": "mobileappcustomproductdetails"
+            },
+            true
+          ]
+        }
       },
       {
         "component": "select",
@@ -11889,11 +11929,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproducttitle"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproducttitle"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11922,11 +11974,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproducttitle"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproducttitle"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11951,11 +12015,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproducttitle"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproducttitle"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11967,11 +12043,23 @@
         "multi": true,
         "description": "One style per row, as key:value (e.g. marginTop:8, padding:8)",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproducttitle"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproducttitle"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -11980,7 +12068,15 @@
         "name": "mobileappshowproductprice",
         "label": "Enable Product Price",
         "value": "true",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "condition": {
+          "==": [
+            {
+              "var": "mobileappcustomproductdetails"
+            },
+            true
+          ]
+        }
       },
       {
         "component": "text",
@@ -11990,11 +12086,23 @@
         "multi": true,
         "description": "One style per row, as key:value (e.g. marginTop:8, padding:8)",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductprice"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductprice"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -12003,7 +12111,15 @@
         "name": "mobileappshowproductaddtocartbutton",
         "label": "Enable Add to Cart Button",
         "value": "true",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "condition": {
+          "==": [
+            {
+              "var": "mobileappcustomproductdetails"
+            },
+            true
+          ]
+        }
       },
       {
         "component": "select",
@@ -12026,11 +12142,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductaddtocartbutton"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductaddtocartbutton"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -12063,11 +12191,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductaddtocartbutton"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductaddtocartbutton"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -12096,11 +12236,23 @@
           }
         ],
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductaddtocartbutton"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductaddtocartbutton"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -12112,11 +12264,23 @@
         "multi": true,
         "description": "One style per row, as key:value (e.g. marginTop:8, padding:8)",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductaddtocartbutton"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductaddtocartbutton"
+                },
+                true
+              ]
+            }
           ]
         }
       },
@@ -12125,7 +12289,15 @@
         "name": "mobileappshowproductdescription",
         "label": "Enable Product Description",
         "value": "true",
-        "valueType": "boolean"
+        "valueType": "boolean",
+        "condition": {
+          "==": [
+            {
+              "var": "mobileappcustomproductdetails"
+            },
+            true
+          ]
+        }
       },
       {
         "component": "text",
@@ -12135,11 +12307,23 @@
         "multi": true,
         "description": "One style per row, as key:value (e.g. marginTop:8, padding:8)",
         "condition": {
-          "==": [
+          "and": [
             {
-              "var": "mobileappshowproductdescription"
+              "==": [
+                {
+                  "var": "mobileappcustomproductdetails"
+                },
+                true
+              ]
             },
-            true
+            {
+              "==": [
+                {
+                  "var": "mobileappshowproductdescription"
+                },
+                true
+              ]
+            }
           ]
         }
       }
