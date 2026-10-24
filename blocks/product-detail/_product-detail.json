@@ -179,7 +179,7 @@
               "component": "boolean",
               "name": "mobileappshowproductimage",
               "label": "Enable Product Image",
-              "value": "true",
+              "value": "false",
               "valueType": "boolean",
               "condition": {
                 "==": [
@@ -303,7 +303,7 @@
               "component": "boolean",
               "name": "mobileappshowproducttitle",
               "label": "Enable Product Title",
-              "value": "true",
+              "value": "false",
               "valueType": "boolean",
               "condition": {
                 "==": [
@@ -498,7 +498,7 @@
               "component": "boolean",
               "name": "mobileappshowproductprice",
               "label": "Enable Product Price",
-              "value": "true",
+              "value": "false",
               "valueType": "boolean",
               "condition": {
                 "==": [
@@ -558,7 +558,7 @@
               "component": "boolean",
               "name": "mobileappshowproductaddtocartbutton",
               "label": "Enable Add to Cart Button",
-              "value": "true",
+              "value": "false",
               "valueType": "boolean",
               "condition": {
                 "==": [
@@ -753,7 +753,7 @@
               "component": "boolean",
               "name": "mobileappshowproductdescription",
               "label": "Enable Product Description",
-              "value": "true",
+              "value": "false",
               "valueType": "boolean",
               "condition": {
                 "==": [
