@@ -4312,9 +4312,17 @@
         ]
       },
       {
+        "component": "number",
+        "name": "mobileopacity",
+        "label": "Overlay Opacity",
+        "valueType": "number",
+        "valueFormat": "double",
+        "description": "Darkness of the overlay behind the hero text on mobile, as a decimal from 0 (none) to 1 (solid), e.g. 0.5. Leave empty to follow the Text Overlay switch."
+      },
+      {
         "component": "select",
         "name": "mobilehorizontalalignment",
-        "label": "Horizontal Alignment",
+        "label": "Text Horizontal Alignment",
         "valueType": "string",
         "options": [
           {
@@ -4330,14 +4338,6 @@
             "value": "right"
           }
         ]
-      },
-      {
-        "component": "number",
-        "name": "mobileopacity",
-        "label": "Overlay Opacity",
-        "valueType": "number",
-        "valueFormat": "double",
-        "description": "Darkness of the overlay behind the hero text on mobile, as a decimal from 0 (none) to 1 (solid), e.g. 0.5. Leave empty to follow the Text Overlay switch."
       },
       {
         "component": "boolean",
